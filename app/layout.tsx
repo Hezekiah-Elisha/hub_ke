@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Archivo, Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import NavHeader from "@/components/layout/NavHeader";
+import Hero from "@/components/layout/Hero";
 
 const archivo = Archivo({
   variable: "--font-archivo",

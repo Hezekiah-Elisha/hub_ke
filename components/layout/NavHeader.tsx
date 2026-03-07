@@ -9,6 +9,12 @@ export default function NavHeader() {
             </div>
             <div className='flex flex-row gap-4 items-center'>
                 <Link href={'/'} className='hover:underline'>
+                    Home
+                </Link>
+                <Link href={'/#our-products'} className='hover:underline'>
+                    Our Products
+                </Link>
+                <Link href={'/#about-us'} className='hover:underline'>
                     Who are we?
                 </Link>
                 <Button size={'sm'} className='' variant="noShadow">
