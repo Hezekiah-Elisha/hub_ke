@@ -20,14 +20,14 @@ export default function NavHeader() {
                     <Link href={'/#about-us'} className='hover:underline'>
                         Who are we?
                     </Link>
-                    <Button size={'sm'} className='' variant="noShadow">
+                    <Button size={'sm'} className='bg-background hover:cursor-pointer' variant="noShadow">
                         Contact Us
                     </Button>
                 </div>
                 <div className="block md:hidden">
                     <Sheet>
                         <SheetTrigger asChild>
-                            <Button><MenuIcon className="h-6 w-6" /> </Button>
+                            <Button><MenuIcon className="h-6 w-6" /></Button>
                         </SheetTrigger>
                         <SheetContent>
                             <SheetHeader>
@@ -36,22 +36,26 @@ export default function NavHeader() {
                                     Make changes to your profile here. Click save when you&apos;re done.
                                 </SheetDescription>
                             </SheetHeader>
-                            <div className='flex flex-col gap-4 items-center'>
+                            <div className='flex flex-col gap-4 items-start justify-start mt-4 p-4'>
+                               <SheetClose asChild>
                                 <Link href={'/'} className='hover:underline'>
                                     Home
                                 </Link>
-                                <Link href={'/#our-products'} className='hover:underline'>
-                                    Our Products
-                                </Link>
-                                <Link href={'/#about-us'} className='hover:underline'>
-                                    Who are we?
-                                </Link>
-                                <Button size={'sm'} className='' variant="noShadow">
-                                    Contact Us
-                                </Button>
+                                </SheetClose>
+                                <SheetClose asChild>
+                                
+                                    <Link href={'/#our-products'} className='hover:underline'>
+                                        Our Products
+                                    </Link>
+                                </SheetClose>
+                                <SheetClose asChild>
+                                    <Link href={'/#about-us'} className='hover:underline'>
+                                        Who are we?
+                                    </Link>
+                                </SheetClose>
                             </div>
-                            <SheetFooter>
-                                <Button type="submit">Save changes</Button>
+                            <SheetFooter className='flex flex-row justify-end items-center gap-4'>
+                                <Button type="submit">Contact Us</Button>
                                 <SheetClose asChild>
                                     <Button variant="neutral">Close</Button>
                                 </SheetClose>

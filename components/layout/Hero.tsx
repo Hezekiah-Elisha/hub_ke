@@ -5,7 +5,7 @@ import { Button } from "../ui/button";
 export default function Hero() {
     return (
         <section className="h-screen relative flex md:flex-row flex-col justify-center items-center font-archivo">
-            <div className="flex-1 w-full px-10 flex md:flex-row flex-col justify-center align-middle">
+            <div className="flex-1 w-full px-10 flex md:flex-row flex-col justify-center align-middle pt-10 md:pt-0">
                 <Image
                     src={'/hero-background.webp'}
                     alt="Hero Background"
