@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Archivo, Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import NavHeader from "@/components/layout/NavHeader";
+import Footer from "@/components/layout/Footer";
 
 const archivo = Archivo({
   variable: "--font-archivo",
@@ -35,6 +36,7 @@ export default function RootLayout({
       >
         <NavHeader />
         {children}
+        <Footer/>
       </body>
     </html>
   );
