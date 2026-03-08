@@ -20,7 +20,7 @@ export default function Hero() {
                     Hub KE is a technology organization that specializes in
                     providing innovative solutions to businesses and
                     individuals. We are committed to delivering high-quality products and services that meet the needs of our clients. Our team of experts is dedicated to helping our clients achieve their goals through the use of cutting-edge technology and exceptional customer service.
-                    Main Developer is <Link href="https://www.linkedin.com/in/hezekiah-elisha" className="underline text-main-foreground" target="blank">Hezekiah Elisha</Link>.
+                    Main Developer is <Link href="https://www.linkedin.com/in/hezekiah-elisha" className="underline text-main-foreground" target="_blank">Hezekiah Elisha</Link>.
                 </p>
                 <p className="text-xs text-main-foreground bg-main italic p-2 pl-8 border-l-2">
                     The home of innovation and clarity
