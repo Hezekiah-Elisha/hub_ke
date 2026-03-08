@@ -13,7 +13,7 @@ export default function OurApps() {
           you&apos;re looking for productivity tools, entertainment, or something
           else, we&apos;ve got you covered. Most will be posted as soon as they are available
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           <Card>
             <CardHeader>
               <CardTitle className="uppercase">Accommodica</CardTitle>
