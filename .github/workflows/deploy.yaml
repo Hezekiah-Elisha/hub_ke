@@ -21,7 +21,7 @@ jobs:
                       set -e
 
                       echo "::group::📥 Reset repository"
-                      cd /home/admin/accomodica/accommodica
+                      cd /home/admin/hub/hub_ke
                       git fetch origin
                       git reset --hard origin/main
                       git clean -fd
