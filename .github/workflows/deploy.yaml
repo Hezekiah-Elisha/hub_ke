@@ -1,4 +1,4 @@
-name: Deploy accommodica frontend to production
+name: Deploy Hub Ke frontend to production
 
 on:
     push:
