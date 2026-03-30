@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Card, CardAction, CardContent, CardHeader, CardTitle } from "../ui/card";
 import { LinkIcon, MoveRightIcon } from "lucide-react";
 import { Button } from "../ui/button";
+import ProjectCard from "../ProjectCard";
 
 export default function OurApps() {
   return (
@@ -14,39 +15,27 @@ export default function OurApps() {
           else, we&apos;ve got you covered. Most will be posted as soon as they are available
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          <Card>
-            <CardHeader>
-              <CardTitle className="uppercase">Accommodica</CardTitle>
-              <CardAction>
-                <div className="flex flex-row justify-center align-middle items-center gap-2 text-sm">
-                  <LinkIcon className="h-4 w-4" />
-                  <Link href="https://accommodica.com">
-                    Accommodica
-                  </Link>
-                </div>
-              </CardAction>
-            </CardHeader>
-            <CardContent className="flex flex-col gap-4">
-              <p>
-                Accommodica is a platform that connects people with unique and
+          <ProjectCard
+            title="Accommodica"
+            description="Accommodica is a platform that connects people with unique and
                 affordable accommodations around the world. Whether you&apos;re
                 looking for a cozy cabin in the mountains, a beachfront villa,
                 or a stylish apartment in the city, Accommodica has something
                 for everyone. With a user-friendly interface and a wide range
                 of options, Accommodica makes it easy to find the perfect
-                place to stay for your next adventure.
-              </p>
-              <div className="flex flex-row justify-end items-center">
-
-                <Link href="https://accommodica.com" className="underline text-main-foreground" target="blank">
-                  <Button variant="reverse" size="sm">
-                    View App
-                    <MoveRightIcon />
-                  </Button>
-                </Link>
-              </div>
-            </CardContent>
-          </Card>
+                place to stay for your next adventure."
+            link="https://accommodica.com"
+          />
+          <ProjectCard
+            title="tazx"
+            description="Originating from the name tazama, which means &quot;to 
+            look&quot; in Swahili, tazx is a command line tool that simplifies 
+            server observability by providing a unified interface for querying 
+            and visualizing logs, metrics, and traces. With tazx, developers can
+             easily monitor their applications and infrastructure, identify 
+             issues, and gain insights into system performance"
+            // . Tazx supports multiple data sources and offers powerful querying capabilities, making it an essential tool for modern DevOps teams." 
+            link="https://github.com/Hezekiah-Elisha/tazx" />
         </div>
       </div>
     </section>
