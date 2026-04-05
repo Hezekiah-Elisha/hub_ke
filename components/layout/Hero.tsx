@@ -12,6 +12,7 @@ export default function Hero() {
                     width={1500}
                     height={1200}
                     className="object-cover object-center shadow-shadow border-border w-full h-full"
+                    loading="eager"
                 />
             </div>
             <div className='flex-1 p-2 justify-center items-center md:items-start flex flex-col gap-4 text-center md:text-left'>

@@ -1,3 +1,4 @@
+"use client"
 import Link from 'next/link'
 import { Button } from '../ui/button'
 import { Sheet, SheetClose, SheetContent, SheetDescription, SheetFooter, SheetHeader, SheetTitle, SheetTrigger } from '../ui/sheet'
