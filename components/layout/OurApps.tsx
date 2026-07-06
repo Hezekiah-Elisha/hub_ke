@@ -36,6 +36,14 @@ export default function OurApps() {
              issues, and gain insights into system performance"
             // . Tazx supports multiple data sources and offers powerful querying capabilities, making it an essential tool for modern DevOps teams." 
             link="https://github.com/Hezekiah-Elisha/tazx" />
+          <ProjectCard
+            title="Chess Hub Ke"
+            description="Chess Hub Ke is a platform for chess enthusiasts to 
+            connect, play, and improve their skills. A place where Kenyan FIDE 
+            ratings are fully displayed Whether you're a beginner or an expert, 
+            Chess Hub Ke offers a variety of features to enhance your chess experience."
+            link="https://chess.hub.ke"
+          />
         </div>
       </div>
     </section>
