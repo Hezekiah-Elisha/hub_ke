@@ -1,51 +1,55 @@
 import Link from "next/link";
-import { Card, CardAction, CardContent, CardHeader, CardTitle } from "../ui/card";
-import { LinkIcon, MoveRightIcon } from "lucide-react";
-import { Button } from "../ui/button";
 import ProjectCard from "../ProjectCard";
 
 export default function OurApps() {
   return (
-    <section className="flex flex-col justify-center align-middle font-archivo container mx-auto px-4 md:px-0 py-10 gap-8" id="our-products">
-      <h2 className="text-2xl font-bold mb-4 text-center">Our Apps</h2>
-      <div className="flex flex-col gap-4">
-        <p className="text-center">
-          We have a variety of apps that cater to different needs. Whether
-          you&apos;re looking for productivity tools, entertainment, or something
-          else, we&apos;ve got you covered. Most will be posted as soon as they are available
-        </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+    <div className="w-full py-12 md:py-20 font-archivo border-t-[3px] border-border bg-background" id="our-products">
+      {/* Neubrutalist Marquee Banner */}
+      <div className="w-full bg-chart-1 border-y-[3px] border-border py-3 overflow-hidden select-none mb-16 relative">
+        <div className="animate-marquee whitespace-nowrap flex gap-8 font-black uppercase text-sm tracking-widest text-black">
+          <span>Hub KE Apps &bull; Innovation &bull; Clarity &bull; Accommodica &bull; tazx &bull; Chess Hub Ke &bull; Hub KE Apps &bull; Innovation &bull; Clarity &bull; Accommodica &bull; tazx &bull; Chess Hub Ke &bull; Hub KE Apps &bull; Innovation &bull; Clarity &bull; Accommodica &bull; tazx &bull; Chess Hub Ke &bull;</span>
+          <span>Hub KE Apps &bull; Innovation &bull; Clarity &bull; Accommodica &bull; tazx &bull; Chess Hub Ke &bull; Hub KE Apps &bull; Innovation &bull; Clarity &bull; Accommodica &bull; tazx &bull; Chess Hub Ke &bull; Hub KE Apps &bull; Innovation &bull; Clarity &bull; Accommodica &bull; tazx &bull; Chess Hub Ke &bull;</span>
+        </div>
+      </div>
+
+      <section className="container mx-auto px-4 md:px-8 flex flex-col gap-12">
+        {/* Section Header */}
+        <div className="flex flex-col items-center text-center gap-2 max-w-2xl mx-auto">
+          <span className="bg-chart-3 text-white border-[3px] border-border px-4 py-1.5 shadow-[4px_4px_0px_0px_var(--border)] font-black text-sm uppercase -rotate-1 tracking-wider">
+            Active Catalog
+          </span>
+          <h2 className="text-4xl md:text-5xl font-black uppercase mt-4 text-main-foreground">Our Apps</h2>
+          <p className="text-foreground/80 font-medium leading-relaxed mt-2 text-sm md:text-base">
+            We have a variety of apps that cater to different needs. Whether
+            you&apos;re looking for productivity tools, entertainment, or observability cli systems, we&apos;ve got you covered.
+          </p>
+        </div>
+
+        {/* Project Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto w-full">
           <ProjectCard
             title="Accommodica"
-            description="Accommodica is a platform that connects people with unique and
-                affordable accommodations around the world. Whether you&apos;re
-                looking for a cozy cabin in the mountains, a beachfront villa,
-                or a stylish apartment in the city, Accommodica has something
-                for everyone. With a user-friendly interface and a wide range
-                of options, Accommodica makes it easy to find the perfect
-                place to stay for your next adventure."
+            category="Travel & Hospitality"
+            badgeColor="bg-chart-5"
+            description="Accommodica is a platform that connects people with unique and affordable accommodations around the world. Whether you're looking for a cozy cabin in the mountains, a beachfront villa, or a stylish city apartment, Accommodica makes it easy to find the perfect place for your next adventure."
             link="https://accommodica.com"
           />
           <ProjectCard
             title="tazx"
-            description="Originating from the name tazama, which means &quot;to 
-            look&quot; in Swahili, tazx is a command line tool that simplifies 
-            server observability by providing a unified interface for querying 
-            and visualizing logs, metrics, and traces. With tazx, developers can
-             easily monitor their applications and infrastructure, identify 
-             issues, and gain insights into system performance"
-            // . Tazx supports multiple data sources and offers powerful querying capabilities, making it an essential tool for modern DevOps teams." 
-            link="https://github.com/Hezekiah-Elisha/tazx" />
+            category="DevOps & Observability"
+            badgeColor="bg-chart-1"
+            description="Originating from Swahili 'tazama' (to look), tazx is a powerful command line tool that simplifies server observability. It provides a unified terminal interface for querying and visualizing system logs, metrics, and traces, enabling developers to monitor performance in real-time."
+            link="https://github.com/Hezekiah-Elisha/tazx" 
+          />
           <ProjectCard
             title="Chess Hub Ke"
-            description="Chess Hub Ke is a platform for chess enthusiasts to 
-            connect, play, and improve their skills. A place where Kenyan FIDE 
-            ratings are fully displayed Whether you're a beginner or an expert, 
-            Chess Hub Ke offers a variety of features to enhance your chess experience."
+            category="Gaming & Portal"
+            badgeColor="bg-chart-2"
+            description="Chess Hub Ke is the ultimate platform for chess enthusiasts in Kenya. Connect with local players, join competitive tournaments, and track official FIDE ratings. Designed to enhance the chess experience from beginners to national masters."
             link="https://chess.hub.ke"
           />
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 }

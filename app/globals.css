@@ -68,6 +68,16 @@
 @layer base {
   body {
     @apply text-foreground font-base bg-background;
+    background-size: 24px 24px;
+    background-image: 
+      linear-gradient(to right, rgba(0, 0, 0, 0.06) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.06) 1px, transparent 1px);
+  }
+
+  .dark body {
+    background-image: 
+      linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
   }
 
   h1,
@@ -78,4 +88,44 @@
   h6 {
     @apply font-heading;
   }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 30s linear infinite;
+}
+
+.bg-grid-pattern {
+  background-size: 24px 24px;
+  background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.06) 1px, transparent 1px);
+}
+
+.dark .bg-grid-pattern {
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+}
+
+.neo-border {
+  border: 3px solid var(--border);
+}
+
+.neo-shadow {
+  box-shadow: 6px 6px 0px 0px var(--border);
+}
+
+.neo-shadow-sm {
+  box-shadow: 4px 4px 0px 0px var(--border);
+}
+
+.neo-shadow-lg {
+  box-shadow: 8px 8px 0px 0px var(--border);
 }
