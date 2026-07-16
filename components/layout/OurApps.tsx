@@ -1,4 +1,3 @@
-import Link from "next/link";
 import ProjectCard from "../ProjectCard";
 
 export default function OurApps() {
